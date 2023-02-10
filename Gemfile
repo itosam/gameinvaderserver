@@ -33,6 +33,7 @@ gem "rake", "~> 13.0"
 gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
+
 group :development do
   gem "pry", "~> 0.14.1"
 # Provides functionality to interact with a SQLite3 database
@@ -46,6 +47,7 @@ group :production do
   gem "pg"
 end
 
+gem "puma", "~> 5.0"
 # These gems will only be used when we are running tests
 group :test do
   gem "database_cleaner", "~> 2.0"
